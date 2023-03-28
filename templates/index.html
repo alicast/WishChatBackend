@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="m-2"><h4>wish_chat</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'wish_chat_GroupUsers_list' %}">GroupUsers Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'wish_chat_Group_list' %}">Group Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'wish_chat_User_list' %}">User Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'wish_chat_Message_list' %}">Message Listing</a></div>
+{% endblock %}

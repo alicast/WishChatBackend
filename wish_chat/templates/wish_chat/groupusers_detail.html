@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+<p>
+    <a class="btn btn-light" href="{% url 'wish_chat_GroupUsers_list' %}">
+    GroupUsers Listing
+    </a>
+</p>
+    
+<table class="table">
+    <tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+    <tr><td>created</td><td>{{ object.created }}</td></tr>
+    <tr><td>user</td><td>{{ object.user }}</td></tr>
+    <tr><td>group</td><td>{{ object.group }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit</a>
+
+{% endblock %}
